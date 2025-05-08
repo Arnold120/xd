@@ -5,6 +5,11 @@
     border: 1px solid #ddd;
 }
 
+.contenido-principal {
+    overflow: auto;
+    background-color: #ddd;
+}
+
 .table-container table {
     width: 100%;
     border-collapse: collapse;

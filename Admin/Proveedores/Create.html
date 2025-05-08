@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Proveedor</title>
+    <link rel="stylesheet" href="../create_diseño.css" />
+</head>
+<body>
+    <div class="admin-container">
+        <div class="logo">
+            <h1>Librería El Estudiante</h1>
+        </div>
+        <div class="usuario">
+            <span id="usuarioNombre">Usuario: </span>
+            <button id="cerrarSesion" type="button">Cerrar Sesión</button>
+        </div>
+        <div class="admin-main-container">
+            <form onsubmit="onCreateProveedor(event)">
+                <label for="empresa">Nombre Empresa</label>
+                <input type="text" name="empresa" id="empresa" placeholder="Nombre de la empresa" />
+
+                <label for="direccion">Dirección</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Dirección del proveedor" />
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" name="telefono" id="telefono" placeholder="Teléfono" />
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" />
+
+                <button type="submit">Crear Proveedor</button>
+            </form>
+        </div>
+    </div>
+    <script src="./create_proveedor.js"></script>
+</body>
+</html>

@@ -31,6 +31,7 @@ function createAdminMenu() {
 			isActive: isRouteActive(categoryRoute),
 		},
 	];
+	
 	const botonCerrarSesion = document.getElementById("cerrarSesion");
 	if (botonCerrarSesion) {
     	botonCerrarSesion.addEventListener("click", () => {

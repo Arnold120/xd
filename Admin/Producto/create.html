@@ -4,16 +4,17 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../admin.css" />
+		<Link rel="stylesheet" href="../create_diseño.css" />
 		<title>Crear Producto</title>
 	</head>
 	<body>
 		<div class="admin-container">
-			<div class="admin-header">Header</div>
-			<div class="admin-sidebar">
-				<ul id="admin-sidebar-menu"></ul>
-				<div class="logout-container">
-					<button type="button">Cerrar Sesión</button>
-				</div>
+			<div class="logo">
+				<h1>Librería El Estudiante</h1>
+			</div>
+			<div class="usuario">
+				<span id="usuarioNombre">Usuario: </span>
+				<button id="cerrarSesion" type="button">Cerrar Sesión</button>
 			</div>
 			<div class="admin-main-container">
 				<form onsubmit="onCreateProduct(event)">

@@ -1,0 +1,167 @@
+@import url("../index.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ecf0f1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.admin-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px; /* Adjusted to accommodate the fixed topbar */
+}
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+/* Contenedor opcional si deseas alinear todo al centro */
+.admin-main-container select.select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    font-size: 15px;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='%2334495e' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select.select:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Input number similar en estilo */
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Topbar */
+.logo {
+    background-color: #2c3e50;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+.usuario span {
+    margin-right: 10px;
+}
+
+.usuario button {
+    padding: 8px 16px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.usuario button:hover {
+    background-color: #c0392b;
+}
+
+/* Main content container */
+.admin-main-container {
+    margin-top: 100px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 12px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+form button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+    background-color: #1c5980;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-main-container {
+        margin: 100px 20px 0 20px;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .usuario span {
+        display: none;
+    }
+}

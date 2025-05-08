@@ -2,8 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Productos | Librería El Estudiante</title>
+    <title>Proveedores</title>
     <link rel="stylesheet" href="../../Index.css" />
     <link rel="stylesheet" href="../admin.css" />
     <link rel="stylesheet" href="../table.css" />
@@ -11,9 +10,7 @@
 </head>
 <body>
     <header class="topbar">
-        <div class="logo">
-            <h1>Librería El Estudiante</h1>
-        </div>
+        <div class="logo"><h1>Librería El Estudiante</h1></div>
         <div class="usuario">
             <span id="usuarioNombre">Usuario: </span>
             <button id="cerrarSesion" type="button">Cerrar Sesión</button>
@@ -23,10 +20,10 @@
     <aside class="sidebar">
         <nav>
             <ul>
-                <li><a href="../../Factura.html">📄 Facturación</a></li>
-                <li><a href="../../Ventas.html">🛒 Ventas</a></li>
-                <li><a href="../../compras.html">📦 Compras</a></li>
-                <li><a href="../../Inventario.html">📊 Movimiento de Inventario</a></li>
+                <li><a href="../Factura.html">📄 Facturación</a></li>
+                <li><a href="../Ventas.html">🛒 Ventas</a></li>
+                <li><a href="../compras.html">📦 Compras</a></li>
+                <li><a href="../Inventario.html">📊 Inventario</a></li>
             </ul>
         </nav>
         <li class="submenu">
@@ -41,19 +38,19 @@
     </aside>
 
     <main class="contenido-principal">
-        <h2>📚 Lista de Productos</h2>
-        <button type="button" onclick="redirectToCreateProduct(event)">
-            Crear Producto
+        <h2>🏭 Lista de Proveedores</h2>
+        <button onclick="redirectToCreateProveedor(event)">
+            Agregar Proveedor
         </button>
-        <div id="tbl-container-products" class="table-container shadow-md">
-        </div>
+        <div id="tbl-container-Proveedores" class="table-container shadow-md"></div>
     </main>
 
+    <!-- Formulario para editar proveedores (se agregará dinámicamente si se selecciona un proveedor para editar) -->
+
     <script src="../../auth.js"></script>
-    <script src="../table.js"></script>
     <script src="../admin.js"></script>
-    <script src="../Categoria/categories.service.js"></script>
-    <script src="../brands/brands.service.js"></script>
-    <script src="./products.js"></script>
+    <script src="../table.js"></script>
+    <script src="./Create_Proveedor.js"></script>
+    <script src="./provedores.js"></script>
 </body>
 </html>

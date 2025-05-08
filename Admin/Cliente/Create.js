@@ -25,6 +25,6 @@ async function onCreateClient(event) {
         return;
     }
 
-    const productsUrl = `${window.location.origin}/Admin/Cliente/Create.html`;
+    const productsUrl = `${window.location.origin}/Admin/Cliente/index.html`;
     window.location.href = productsUrl;
 }
