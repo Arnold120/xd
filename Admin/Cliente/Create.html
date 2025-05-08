@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create client</title>
+    <link rel="stylesheet" href="../admin.css" />
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">Header</div>
+        <div class="admin-sidebar">
+            <ul id="admin-sidebar-menu"></ul>
+            <div class="logout-container">
+                <button type="button">Cerrar Sesión</button>
+            </div>
+        </div>
+        <div class="admin-main-container">
+            <form onsubmit="onCreateClient(event)">
+                <label htmlFor="name">Nombre</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="ingrese el nombre del cliente"
+                />
+                <label htmlFor="apellido">Apellido</label>
+                <input
+                    type="text"
+                    id="apellido"
+                    name="apellidoId"
+                    placeholder="Ingrese el apellido del cliente"
+                />
+                <button type="submit">
+                    Crear Producto
+                </button>
+				</form>
+			</div>
+		</div>
+        <script src="../admin.js"></script>
+        <script src="./Create.js"></script>
+</body>
+</html>

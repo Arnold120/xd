@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control | Librería El Estudiante</title>
+    <link rel="stylesheet" href="./Index.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <h1>Librería El Estudiante</h1>
+        </div>
+        <div class="usuario">
+            <span id="usuarioNombre">Usuario: </span>
+            <button id="cerrarSesion" type="button">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="./Factura.html" onclick="mostrarSeccion('facturacion')">📄 Facturación</a></li>
+                <li><a href="./Ventas.html" onclick="mostrarSeccion('ventas')">🛒 Ventas</a></li>
+                <li><a href="./compras.html" onclick="mostrarSeccion('compras')">📦 Compras</a></li>
+                <li><a href="./Inventario.html" onclick="mostrarSeccion('inventario')">📊 Moviento de Inventario</a></li>
+                <!--<li><a href="#" onclick="mostrarSeccion('reportes')">📈 Reportes</a></li> //agg en caso de terminar antes los demas campos -->
+            </ul>
+        </nav>
+        <li class="submenu">
+            <a href="#">📂 Gestión de Catálogos</a>
+            <ul class="submenu-lista">
+                <li><a href="./Admin/Producto/index.html">📚 Productos</a></li>
+                <li><a href="./Admin/Cliente/index.html">👥 Clientes</a></li>
+                <li><a href="./Proveedores.html">🏭 Proveedores</a></li>
+            </ul>
+        </li>     
+    </aside>
+
+    <main class="contenido-principal">
+        <!-- Faltante // agg en la proxima revision -->
+        <!-- mejoras de diseño de contenedor a en listado de prouctos -->
+    </main>
+
+    <script src="./Auth.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos | Librería El Estudiante</title>
+    <link rel="stylesheet" href="../../Index.css" />
+    <link rel="stylesheet" href="../admin.css" />
+    <link rel="stylesheet" href="../table.css" />
+    <link rel="stylesheet" href="../../utils.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <h1>Librería El Estudiante</h1>
+        </div>
+        <div class="usuario">
+            <span id="usuarioNombre">Usuario: </span>
+            <button id="cerrarSesion" type="button">Cerrar Sesión</button>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="../../Factura.html">📄 Facturación</a></li>
+                <li><a href="../../Ventas.html">🛒 Ventas</a></li>
+                <li><a href="../../compras.html">📦 Compras</a></li>
+                <li><a href="../../Inventario.html">📊 Movimiento de Inventario</a></li>
+            </ul>
+        </nav>
+        <li class="submenu">
+            <a href="#">📂 Gestión de Catálogos</a>
+            <ul class="submenu-lista">
+                <li><a href="./index.html">📚 Productos</a></li>
+                <li><a href="../Cliente/index.html">👥 Clientes</a></li>
+                <li><a href="../../Proveedores.html">🏭 Proveedores</a></li>
+            </ul>
+        </li>
+    </aside>
+
+    <main class="contenido-principal">
+        <h2>📚 Lista de Productos</h2>
+        <button type="button" onclick="redirectToCreateProduct(event)">
+            Crear Producto
+        </button>
+        <div id="tbl-container-products" class="table-container shadow-md">
+        </div>
+    </main>
+
+    <script src="../../auth.js"></script>
+    <script src="../table.js"></script>
+    <script src="../admin.js"></script>
+    <script src="../Categoria/categories.service.js"></script>
+    <script src="../brands/brands.service.js"></script>
+    <script src="./products.js"></script>
+</body>
+</html>

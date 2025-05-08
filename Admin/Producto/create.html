@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../admin.css" />
+		<title>Crear Producto</title>
+	</head>
+	<body>
+		<div class="admin-container">
+			<div class="admin-header">Header</div>
+			<div class="admin-sidebar">
+				<ul id="admin-sidebar-menu"></ul>
+				<div class="logout-container">
+					<button type="button">Cerrar Sesión</button>
+				</div>
+			</div>
+			<div class="admin-main-container">
+				<form onsubmit="onCreateProduct(event)">
+					<label htmlFor="name">Nombre</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Nombre del producto"
+					/>
+					<label htmlFor="category">Categoria</label>
+					<select
+						id="category"
+						name="categoryId"
+						class="select"
+						title="Seleccionar categoría"
+					>
+						<option value="0">Seleccionar Categoria</option>
+					</select>
+					<label htmlFor="quantity">Marca</label>
+					<select
+						id="brand"
+						name="brandId"
+						class="select"
+						title="Seleccionar marca"
+					>
+						<option value="0">Seleccionar Marca</option>
+					</select>
+					<label htmlFor="price">Precio</label>
+					<input
+						type="number"
+						id="price"
+						name="unitPrice"
+						placeholder="Precio del producto"
+					/>
+                    <button type="submit">
+                        Crear Producto
+                    </button>
+				</form>
+			</div>
+		</div>
+		<script src="../../auth.js"></script>
+		<script src="../admin.js"></script>
+		<script src="../Categoria/categories.service.js"></script>
+		<script src="../brands/brands.service.js"></script>
+        <script src="./create.js"></script>
+	</body>
+</html>

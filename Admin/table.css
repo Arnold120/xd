@@ -1,0 +1,33 @@
+.table-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-container table thead {
+    background-color: #ddd;
+}
+
+.table-container table thead tr th {
+    padding: 8px;
+    text-align: left;
+}
+
+.table-container table tbody tr:nth-child(odd) {
+    background-color: #e9ecf4;
+}
+
+.table-container table tbody tr:hover {
+    background-color: burlywood;
+}
+
+.table-container table tbody tr td {
+    padding: 8px;
+}
